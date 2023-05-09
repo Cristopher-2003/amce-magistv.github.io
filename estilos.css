@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+    background-image: linear-gradient(rgb(13, 73, 164), rgb(0, 0, 0));
+}
+.nav_contenido{
+    display: none;
+}
+
+.section_contenedor{
+    width: 100%;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.contenido_navegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icono{
+    height: 32px;
+}
+
+.contenido-informativo-textos-imagenes{
+    margin-top: 20px;
+    padding-top: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+.titulo-informativo-seccion{
+    font-family: "Calibri";
+    font-weight: 600;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-size: 1.5em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+
+}
+.contenido-galeria{
+    width: 100%;
+    height: 275px;
+    display: flex;
+}
+.contenido-slider{
+    box-shadow: 20px 20px 35px white;
+}
+.contenido-slider .titulo{
+    color: #ffffff;
+    font-size: 22px;
+    font-family: sans-serif;
+    margin: 10px 0 0 9px ;
+    text-shadow: 6px 6px 8px rgb(0, 0, 0);
+}
+
+.contenido-slider:nth-child(1){
+    width: 99%;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+    background-image: url(./img/thelastofus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+
+
+}
+
+.contenido-slider:nth-child(2){
+    width: 99%;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+    background-image: url(./img/Mario-Bros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+
+
+
+}
+
+.contenido-slider:nth-child(3){
+    width: 99%;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+    background-image: url(./img/you.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+
+
+
+}
+
+.contenido-slider:nth-child(4){
+    width: 99%;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+    background-image: url(./img/mision\ resccate.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+
+
+}
+
+.contenido-slider:nth-child(5){
+    width: 99%;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+    background-image: url(./img/futbol.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+
+.contenido-slider:nth-child(6){
+    width: 99%;
+    height: inherit;
+    /*min-height: 410px;*/
+    margin: 0 auto;
+    display: flex;
+    background-image: url(./img/uefa.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+
+.contenido-slider:nth-child(7){
+    width: 99%;
+    height: inherit;
+    /*min-height: 410px;*/
+    margin: 0 auto;
+    display: flex;
+    background-image: url(./img/rampage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+
+
+.contenido-galeria{
+    margin-top: 20px;
+}
+
+/*informacion contacto*/
+.informacion_contacto{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.texto_contacto_informativo{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.titulo_contacto{
+    padding:10px 0 20px ;
+    font-size: 27px;
+    color: aliceblue;
+}
+
+.boton_contacto{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(19, 212, 12);
+    padding: 20px 0;
+    height: 40px;
+    border-radius: 10px;
+    width: 150px;
+    animation: agrandar-boton 2s ease-in-out infinite;
+}
+
+
+.btn_ws{
+    width: 30px;
+}
+.numero_contacto{
+    text-decoration: none;
+    color: #fff;
+    font-family: arial;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.texto_contacto{
+    margin: 10px 0;
+    color: #d7d7d7;
+    font-size: 18px;
+}
+.texto_contacto_demo{
+    margin: 10px 0 20px;
+    color: #ff9933;
+    font-size: 20px;
+    font-weight: bold;
+}
+.mas_informacion_contacto{
+    margin: 0 0 30px ;
+    color: #fff;
+    font-size: 20px;
+}
+.requisitos_informacion{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff24;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+
+}
+.requisito_checbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.requisito_checbox .icon_check{
+    width: 10%;
+    max-width: 27px;
+}
+.requisito_checbox .requisito{
+    width: 80%;
+    margin-left: 10px;
+}
+.requisito_checbox:nth-child(1){
+    padding: 15px 0;
+}
+
+.requisito_checbox:nth-child(2){
+    padding: 15px 0;
+}
+
+.requisito_checbox:nth-child(3){
+    padding: 15px 0;
+}
+
+/*seccion dispositvos*/
+
+.dispositivos_paraVer{
+    margin-top: 70px;
+    width: 100%;
+}
+.dispositivos_ver{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.titulo_dispositivo{
+    color: #d7d7d7;
+    font-size: 25px;
+    text-align: center;
+    font-family: monospace;
+    text-shadow: 7px 7px 20px white;
+    font-weight: 700;
+}
+.imagen_dispositivo{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -60px;
+}
+.dispositivos_img{
+    width: 100%;
+}
+
+
+    
+@keyframes agrandar-boton {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+@media (min-width:690px) {
+    .item{
+        display: flex;
+        list-style: none;
+        padding: 10px;
+    }
+    .contenido-slider:nth-child(1){
+        height: 500px;
+        background-position: center;
+    }
+  
+    .contenido-slider:nth-child(2){
+        height: 500px;
+        background-position: center;
+    }
+    .contenido-slider:nth-child(3){
+        height: 500px;
+    }
+    .contenido-slider:nth-child(4){
+        height: 500px;
+    }
+    .contenido-slider:nth-child(5){
+        height: 500px;
+    }
+    .contenido-slider:nth-child(6){
+        height: 500px;
+    }
+
+    .contenido-slider:nth-child(7){
+        height: 500px;
+    }
+
+    .icon{
+        display: none;
+    }
+   
+    .nav_contenido{
+        display: flex;
+    }
+    .nav_item{
+        font-size: 17px;
+        padding: 5px 10px;
+        color: #0be0c4;
+        text-decoration: none;
+        font-family: sans-serif;
+    }
+
+    .nav_item:hover{
+        background-color: #0be0c4;
+        transition: 1s;
+        border-radius: 6px;
+        color: black;
+    }
+
+
+    .titulo-informativo-seccion{
+        width: 70%;
+        font-size: 30px;
+    }
+    .contenido_slider_e_informativo{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .contenido-informativo-textos-imagenes{
+        width: 70%;
+    }
+    .informacion_contacto{
+        width: 30%;
+    }
+    .titulo_contacto{
+        font-size: 17px;
+    }
+    .texto_contacto{
+        font-size: 16px;
+    }
+    .texto_contacto_demo{
+        font-size: 16px;
+    }
+    .mas_informacion_contacto{
+        font-size: 15px;
+    }
+
+    /* seccion dispositivos*/
+
+
+  
+
+
+    
+}
