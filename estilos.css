@@ -266,33 +266,183 @@ body{
     padding: 15px 0;
 }
 
-/*seccion dispositvos*/
 
-.dispositivos_paraVer{
-    margin-top: 70px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SECCION DISPOSITIVOS*/
+.dispositivos_seccion{
+    margin: 0 auto;
+    margin-top: 100px;
     width: 100%;
 }
-.dispositivos_ver{
-    width: 90%;
+.dispositivos_contenedor{
     margin: 0 auto;
-    
+    padding-top: 20px;
+    width: 90%;
+    text-align: center;
+}
+.titulo_contenedor_dispositivo{
+    margin: 0 auto;
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 90px #fff;
 }
 .titulo_dispositivo{
-    color: #d7d7d7;
-    font-size: 25px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    font-family: monospace;
-    text-shadow: 7px 7px 20px white;
-    font-weight: 700;
 }
 .imagen_dispositivo{
     width: 90%;
+    max-width: 91%;
     margin: 0 auto;
-    margin-top: -60px;
 }
 .dispositivos_img{
     width: 100%;
+    margin-top: -20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SECCION PRODUCTOS */
+
+.contenido_productos{
+    margin-top: 90px;
+}
+
+.textos_productos{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-family:  Tahoma, sans-serif;
+}
+
+.titulo_productos{
+    font-size: 32px;
+    font-weight: lighter;
+}
+.subtitulo_android{
+    color: #ffb534;
+    font-size: 20px;
+    margin: 5px 0;
+}
+.texto_android{
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+
+
+.productos_android{
+    width: 70%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-areas: 
+    "producto1"
+    "producto2"
+    "producto3";
+    gap: 5px;
+
+}
+.producto_nombre{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin: 120px auto;
+}
+.consulta{
+    text-align: center;
+    font-family: sans-serif;
+    color: #000000;
+    text-align: center;
+    margin: -90px auto;
+    background-color: #ff9933;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+
+}
+
+.product{
+    border-radius: 10px;
+    height: 270px;
+}
+
+/*al hacer hover los textos desaparecen*/
+.productos:hover .producto_nombre,
+.productos:hover .consulta {
+    display: none;
+} 
+
+
+.productos:nth-child(1){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.566) , rgba(0, 0, 0, 0.462)) ,url(./img/amazon-fire-tv.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: producto1;
+}
+.productos:nth-child(1):hover{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.007) , rgba(0, 0, 0, 0)) , url(./img/amazon-fire-tv.jpg);
+}
+
+
+
+
+
+.productos:nth-child(2){
+    background-image:linear-gradient(rgba(0, 0, 0, 0.566) , rgba(0, 0, 0, 0.547)) , url(./img/m-stick-android.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: producto2;
+}
+.productos:nth-child(2):hover{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.007) , rgba(0, 0, 0, 0)) , url(./img/m-stick-android.jpg);
+}
+
+
+
+.productos:nth-child(3){
+    background-image:linear-gradient(rgba(0, 0, 0, 0.566) , rgba(0, 0, 0, 0.547)) , url(./img/tv-box.png);
+    background-size: cover;
+    background-position: center;
+    grid-area: producto3;
+}
+.productos:nth-child(3):hover{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.007) , rgba(0, 0, 0, 0)) , url(./img/tv-box.png);
+}
+
+
+
+
+
 
 
     
@@ -347,6 +497,7 @@ body{
    
     .nav_contenido{
         display: flex;
+        overflow: hidden;
     }
     .nav_item{
         font-size: 17px;
@@ -392,7 +543,59 @@ body{
         font-size: 15px;
     }
 
-    /* seccion dispositivos*/
+    /* SECCION DISPOSITIVOS*/
+
+    .dispositivos_contenedor{
+        margin-top: -100px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .imagen_dispositivo{
+        width: 65%;
+    }
+
+    .dispositivos_img{
+        width: 100%;
+    }
+   .titulo_contenedor_dispositivo{
+    width: 30%;
+   }
+   .titulo_dispositivo{
+    font-size: 17px;
+   }
+
+   /*SECCION PRODUCTOS*/
+   .productos_android{
+    width: 90%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: auto;
+    gap: 10px;}
+
+    .product{
+        height: 300px;
+    }
+
+    .productos:nth-child(1){
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+
+    }
+    
+    .productos:nth-child(2){
+        grid-row: 1/2;
+        grid-column: 2 / 3;
+
+    }
+    .productos:nth-child(3){
+        grid-row: 1/2;
+        grid-column: 3 / 4;
+
+    }
+
+
 
 
   
