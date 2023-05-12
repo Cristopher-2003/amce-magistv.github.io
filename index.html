@@ -6,31 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AmcE</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <section class="section_contenedor">
         <div class="container">
             <div class="contenido_navegacion">
                 <div class="logo">
-                    <img src="./img/logo_alterno.png" alt="logo">
+                    <img src="./img/logo_alterno.png" class="logo_icon">
                 </div>
 
                 <div class="icon">
                     <img src="./svg/hamburguer.svg" class="icono">
+                    <input type="checkbox" id="side-menu" class="side-menu">
                 </div>
 
                 <div class="nav_contenido">
                 
                     <li class="item">
-                        <a href="#" class="nav_item active">Inicio</a>
+                        <a href="#sec1" class="nav_item active">Inicio</a>
                     </li>
 
                     <li class="item">
-                        <a href="#" class="nav_item">diversion</a>
+                        <a href="#sec2" class="nav_item">Planes</a>
                     </li>
 
                     <li class="item">
-                        <a href="#" class="nav_item">Productos</a>
+                        <a href="#sec3" class="nav_item">Productos</a>
                     </li>
 
                     <li class="item">
@@ -42,12 +44,26 @@
         </div>
     </section>
 
-    <!--<section class="contenido_galeria_textoContacto">-->
-        <h1 class="titulo-informativo-seccion">
-            Disfruta de las Mejores Series|Peliculas|Deportes y mas...
+        <h1 class="titulo-informativo-seccion" id="sec1">
+            Series, Peliculas y los Deportes que te gustan... <span>TODO EN UNO</span>
         </h1>
 
-        <section class="contenido_slider_e_informativo">
+         <!--Eventos del dia-->
+        <div class="eventos_dia">
+            
+            <div class="contenedor_eventos_dia">
+            <div class="contenido_eventos">
+                <img src="./svg/balon.svg" class="balon_icon">
+                <p class="parrafo_eventos_dia">Eventos del día</p>
+            </div>
+            <a href="https://boxicons.com/?query=ar" class="flecha_eventos_dia">
+                <img src="./svg/arrow.svg" class="arrow_icon">
+            </a>
+        </div>
+        </div>
+
+    <!--<section class="contenido_galeria_textoContacto">-->
+        <section class="contenido_slider_e_informativo" >
         <section class="contenido-informativo-textos-imagenes">
         <div class="contenido-galeria">
             
@@ -99,7 +115,7 @@
     <section class="informacion_contacto">
         <div class="texto_contacto_informativo">
             <h2 class="titulo_contacto">
-                Vive la Nueva forma de ver TV. 
+                Servicios de Magistv. 
             </h2>
             
             <div class="boton_contacto">
@@ -134,7 +150,7 @@
     </section>
 </section>
 
-<section class="dispositivos_seccion">
+<section class="dispositivos_seccion" id="sec2">
     <div class="dispositivos_contenedor">
         <div class="titulo_contenedor_dispositivo">
             <h2 class="titulo_dispositivo">
@@ -150,8 +166,8 @@
 </section>
 
 
-<section class="contenido_productos">
-    <div class="textos_productos">
+<section class="contenido_productos" id="sec3">
+    <div class="textos_productos" >
         <h1 class="titulo_productos">
             Pero.. ¿Y si mi Dispositivo no es Android?
         </h1>
@@ -183,8 +199,36 @@
     </div>
 </section>
 
+<!-- hacer desplazamiento suave con script sacado de internet-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-    <script src="./main.js"></script>
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 2500, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<script src="./main.js"></script>
+
 </body>
 </html>

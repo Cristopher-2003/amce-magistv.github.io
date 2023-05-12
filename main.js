@@ -1,3 +1,4 @@
+/* slider de imagenes*/
 let slider = document.querySelector(".contenido-galeria");
 let sliderIndividual = document.querySelectorAll(".contenido-slider");
 let contador = 1;
