@@ -115,7 +115,7 @@ body{
 }
 .contenedor_eventos_dia{
     display: flex;
-    align-items: center;
+    align-items: center;    
     width: 90%;
     margin: 0 auto;
     justify-content: space-between;
@@ -135,6 +135,9 @@ body{
     font-family: "calibri";
     font-weight: 600;
     text-decoration: none;
+}
+.flecha_eventos{
+    align-items: center;
 }
 
 
@@ -420,30 +423,34 @@ body{
 /*SECCION DISPOSITIVOS*/
 .dispositivos_seccion{
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 200px;
     width: 100%;
 }
 .dispositivos_contenedor{
+    background-color: #061732;
     margin: 0 auto;
     padding-top: 20px;
     width: 90%;
-    text-align: center;
+    box-shadow: 10px 10px 20px #fff;
 }
-.titulo_contenedor_dispositivo{
-    margin: 0 auto;
-    width: 90%;
+.title_dispositivo{
+    color: #cecece;
     padding: 10px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 90px #fff;
+    font-family: "Verdana";
+    text-align: left;
+    font-size: 18px;
+    font-weight: lighter;
 }
-.titulo_dispositivo{
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+.planes_dispositivo{
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.img_planes{
+    width: 100%;
 }
 .imagen_dispositivo{
     width: 90%;
-    max-width: 91%;
     margin: 0 auto;
 }
 .dispositivos_img{
@@ -574,6 +581,48 @@ body{
 .productos:nth-child(3):hover{
     background-image:linear-gradient(rgba(0, 0, 0, 0.007) , rgba(0, 0, 0, 0)) , url(./img/tv-box.png);
 }
+
+
+/*footer*/
+
+.footer{
+    margin-top: 130px ;
+    width: 100%;
+}
+.footer_contenedor{
+    padding-top: 10px;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    color: #cecece;
+    font-family: arial;
+    font-size: 13px;
+}
+.logo_footer{
+    width: 40%;
+    margin: 10px auto;
+}
+.derechos_reservados{
+    margin: 10px 0;
+}
+.mas_info{
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -732,24 +781,32 @@ body{
     /* SECCION DISPOSITIVOS*/
 
     .dispositivos_contenedor{
-        margin-top: -100px;
+        margin-top: 100px;
         display: flex;
-        flex-direction: row-reverse;
         align-items: center;
     }
+    .planes_dispositivo{
+        width: 25%;
+    }
     .imagen_dispositivo{
-        width: 65%;
+        width: 35%;
     }
+    .title_dispositivo{
+        width: 35%;
+    }
+  
 
-    .dispositivos_img{
-        width: 100%;
-    }
-   .titulo_contenedor_dispositivo{
-    width: 30%;
-   }
-   .titulo_dispositivo{
-    font-size: 17px;
-   }
+    
+   
+
+
+
+
+
+
+
+
+    
 
    /*SECCION PRODUCTOS*/
    .productos_android{
@@ -781,6 +838,10 @@ body{
 
     }
 
+    /*footer*/
+    .logo_footer{
+        width: 27%;
+    }
 
 
 

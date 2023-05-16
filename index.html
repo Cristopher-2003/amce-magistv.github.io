@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AmcE</title>
+    <title>AmceTv</title>
+    <link rel="shortcut icon" href="./img/logo_alterno.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
@@ -31,7 +32,7 @@
                         </li>
     
                         <li class="nav_item">
-                            <a href="#" class="nav_link">Contacto</a>
+                            <a href="#sec1" class="nav_link">Contacto</a>
                         </li>
 
                     </ul>
@@ -52,15 +53,15 @@
 
          <!--Eventos del dia-->
         <div class="eventos_dia">
-            
             <div class="contenedor_eventos_dia">
             <div class="contenido_eventos">
                 <img src="./svg/balon.svg" class="balon_icon">
                 <p class="parrafo_eventos_dia">Eventos del día</p>
             </div>
-            <a href="https://boxicons.com/?query=ar" class="flecha_eventos_dia">
+
+            <div class="flecha_eventos">
                 <img src="./svg/arrow.svg" class="arrow_icon">
-            </a>
+            </div>
         </div>
         </div>
 
@@ -152,14 +153,17 @@
     </section>
 </section>
 
+
+
 <section class="dispositivos_seccion" id="sec2">
+    
     <div class="dispositivos_contenedor">
-        <div class="titulo_contenedor_dispositivo">
-            <h2 class="titulo_dispositivo">
-                Disfruta en todos tus Dispositivos!
-            </h2>
+        <h1 class="title_dispositivo">
+            Elige tu plan y vive la experiencia en todos tus Dispositivos
+        </h1>
+        <div class="planes_dispositivo">
+            <img src="./img/planes_precios.png" class="img_planes">
         </div>
-        
         <div class="imagen_dispositivo">
             <img src="./img/dispositivos.png" class="dispositivos_img">
         </div>
@@ -201,31 +205,66 @@
     </div>
 </section>
 
+<footer class="footer">
+    <div class="footer_contenedor">
+        <div class="logo_footer">
+            <img src="./img/logo_alterno.png" class="logo_footer">
+        </div>
+        <div class="textos_footer">
+            <p class="derechos_reservados">
+                © 2023 AmceTv. Todos los derechos reservados.
+            </p>
+            <div class="mas_info">
+                AmceTv es un servicio de entretenimiento sin contrato, su contenido está sujeto a disponibilidad. Para mas informacion contactenos por interno.
+            </div>
+
+            <div class="redes_sociales_footer">
+               <a href="#"><img src="./svg/ws.svg"></a>
+
+               <a href="#"><img src="./svg/instagram.svg"></a>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- hacer desplazamiento suave con script sacado de internet-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
+    
     if (this.hash !== "") {
-      // Prevent default anchor click behavior
       event.preventDefault();
 
-      // Store hash
       var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 2500, function(){
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
+        
         window.location.hash = hash;
       });
-    } // End if
+    } 
   });
 });
 </script>
