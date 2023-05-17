@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.716) , rgba(16, 16, 16, 0.542)) ,url(../img/fondito.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.contenedor_eventos_dia{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.titulo_eventos{
+    color: #fff;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+h2{
+    color: #fff;
+}
