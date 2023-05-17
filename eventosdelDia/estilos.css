@@ -7,7 +7,6 @@ body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.716) , rgba(16, 16, 16, 0.542)) ,url(../img/fondito.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
 }
 .contenedor_eventos_dia{
     width: 90%;
@@ -23,4 +22,107 @@ body{
 }
 h2{
     color: #fff;
+}
+.contenedor_eventos_grid{
+    padding-top: 30px;
+    width: 95%;
+    height: 550px;
+    margin: 0 auto;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "ele1 ele1 ele2 ele2"
+    "ele1 ele1 ele2 ele2"
+    "ele3 ele3 ele4 ele4"
+    "ele3 ele3 ele4 ele4"
+    "ele5 ele5 ele6 ele6"
+    "ele5 ele5 ele6 ele6"
+    "ele7 ele7 ele8 ele8"
+    "ele7 ele7 ele8 ele8"
+    "ele9 ele9 ele9 ele9"
+    "ele9 ele9 ele9 ele9"
+    "ele9 ele9 ele9 ele9";
+}
+.ele1{
+    grid-area: ele1;
+    background-image: url(../img/basket.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.ele2{
+    grid-area: ele2;
+    background-image: url(../img/you.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.ele3{
+    grid-area: ele3;
+    background-image: url(../img/viendo_tv.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.ele4{
+    grid-area: ele4;
+    background-image: url(../img/rampage.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.ele5{
+    grid-area: ele5;
+    background-image: url(../img/Mario-Bros.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.ele6{
+    grid-area: ele6;
+    background-image: url(../img/mision\ resccate.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.ele7{
+    grid-area: ele7;
+    background-image: url(../img/avatar.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.ele8{
+    grid-area: ele8;
+    background-image: url(../img/lupin-grande.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.ele9{
+    grid-area: ele9;
+    background-image: url(../img/uefa.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+@media(min-width:550px) {
+    .contenedor_eventos_grid{
+        overflow: hidden;
+        width: 90%;
+        height: 800px;
+        grid-template-areas: 
+        "ele1 ele2"
+        "ele1 ele2"
+        "ele1 ele4"
+        "ele3 ele4"
+        "ele3 ele4"
+        "ele5 ele6"
+        "ele5 ele6"
+        "ele5 ele8"
+        "ele7 ele8"
+        "ele7 ele8"
+        "ele9  ele9"
+        "ele9  ele9"
+        "ele9  ele9";
+    }
+    .titulo_eventos{
+        font-size: 27px;
+        
+    }
+    
 }
