@@ -35,69 +35,42 @@ h2{
     "ele1 ele1 ele2 ele2"
     "ele3 ele3 ele4 ele4"
     "ele3 ele3 ele4 ele4"
-    "ele5 ele5 ele6 ele6"
-    "ele5 ele5 ele6 ele6"
-    "ele7 ele7 ele8 ele8"
-    "ele7 ele7 ele8 ele8"
-    "ele9 ele9 ele9 ele9"
-    "ele9 ele9 ele9 ele9"
-    "ele9 ele9 ele9 ele9";
+    "ele5 ele5 ele5 ele5"
+    "ele5 ele5 ele5 ele5"
+    ;
 }
 .ele1{
     grid-area: ele1;
-    background-image: url(../img/basket.jpg);
+    background-image: url(../img_eventos/even1.jpeg);
     background-size: cover;
     background-position: center;
 }
 
 .ele2{
     grid-area: ele2;
-    background-image: url(../img/you.jpg);
+    background-image: url(../img_eventos/even2.jpeg);
     background-size: cover;
     background-position: center;
 }
 .ele3{
     grid-area: ele3;
-    background-image: url(../img/viendo_tv.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.413) , rgba(188, 188, 188, 0.356)), url(../img_eventos/even3.jpeg);
     background-size: cover;
     background-position: center;
 }
 .ele4{
     grid-area: ele4;
-    background-image: url(../img/rampage.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.ele5{
-    grid-area: ele5;
-    background-image: url(../img/Mario-Bros.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.ele6{
-    grid-area: ele6;
-    background-image: url(../img/mision\ resccate.webp);
+    background-image: url(../img_eventos/even4.jpeg);
     background-size: cover;
     background-position: center;
 }
 
-.ele7{
-    grid-area: ele7;
-    background-image: url(../img/avatar.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.ele8{
-    grid-area: ele8;
-    background-image: url(../img/lupin-grande.jpg);
+.ele5{
+    grid-area: ele5;
+    background-image: linear-gradient(rgba(129, 129, 129, 0.388) , rgba(63, 166, 203, 0.388)) ,url(../img_eventos/even5.jpeg);
     background-size: cover;
     background-position: center;
-}
-.ele9{
-    grid-area: ele9;
-    background-image: url(../img/uefa.webp);
-    background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
 }
 
 @media(min-width:550px) {
@@ -111,14 +84,10 @@ h2{
         "ele1 ele4"
         "ele3 ele4"
         "ele3 ele4"
-        "ele5 ele6"
-        "ele5 ele6"
-        "ele5 ele8"
-        "ele7 ele8"
-        "ele7 ele8"
-        "ele9  ele9"
-        "ele9  ele9"
-        "ele9  ele9";
+        "ele5 ele5"
+        "ele5 ele5"
+        "ele5 ele5"
+      ;
     }
     .titulo_eventos{
         font-size: 27px;
